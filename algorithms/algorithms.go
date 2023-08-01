@@ -12,39 +12,8 @@ you may not use the same element twice. You can return the answer in any order.
 */
 
 // Complexity Analysis : Time : O(n^2) | Space : O(1)
-func TwoNumberSum(nums []int, target int) []int {
-	for i := 0; i < len(nums); i++ {
-		for j := 0; j < len(nums); j++ {
-			if nums[i]+nums[j] == target && nums[i] != nums[j] {
-				return []int{nums[i], nums[j]}
-			}
-		}
-	}
-	return []int{}
-}
-
-// Complexity Analysis : Time : O(n^2)
-func TwoNumberSum1(nums []int, target int) []int {
-	hashMap := make(map[int]bool)
-
-	for i := 0; i < len(nums); i++ {
-		complement := target - nums[i]
-		if !hashMap[complement] {
-			hashMap[nums[i]] = true
-		} else {
-			return []int{indexOf(nums, complement), i}
-		}
-	}
-	return []int{}
-}
-
-func indexOf(source []int, item int) int {
-	for i := 0; i < len(source); i++ {
-		if source[i] == item {
-			return i
-		}
-	}
-	return -1
+func TwoNumberSum() int {
+	return 1
 }
 
 /*
