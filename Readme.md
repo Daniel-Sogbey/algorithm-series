@@ -10,7 +10,7 @@
 
 - Two Sum
 
-> Prompt
+>
     ******************* PROBLEM 1 ************************
     -------- PROBLEM NAME ::: Two Sum
 
@@ -20,7 +20,7 @@
 
 - Palindrome Number
 
-> Prompt
+>
     ******************* PROBLEM 2 ************************
     --------- PROBLEM NAME ::: Palindrome Number
 
@@ -30,7 +30,7 @@
 
 - Running Sum
 
-> Prompt
+>
     ******************* PROBLEM 3 ************************
 
     ------ PROBLEM NAME ::: Running Sum
@@ -40,7 +40,7 @@
 
 - Remove Element
 
-> Prompt
+>
     ******************* PROBLEM 4 ************************
 
     ------ PROBLEM NAME ::: Remove Element
@@ -55,7 +55,7 @@
 
 - Remove Duplicates From Sorted Array
 
-> Prompt
+>
     ******************* PROBLEM 5 ************************
 
     ------ PROBLEM NAME ::: Remove Duplicates from Sorted Array
