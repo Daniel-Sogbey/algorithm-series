@@ -82,7 +82,7 @@ func ValidateSubsequence() int {
 }
 
 /*
-******************* PROBLEM 5 ************************
+******************* PROBLEM 6 ************************
 
 ------ PROBLEM NAME ::: Run Length Encoding
 -------- INPUT : string = "AAAAAAAAAAAAABBCCCCDD" ------------------------
