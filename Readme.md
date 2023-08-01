@@ -13,6 +13,8 @@
 >
     ******************* PROBLEM 1 ************************
     -------- PROBLEM NAME ::: Two Sum
+    -------- INPUT : array =[2, 11, 15, 7] ------------------------
+    -------- OUTPUT : array =[0,3] or [3,0] -----------------------
 
     Given an array of integers nums and an integer target, return indices of the two numbers such
     that they add up to target. You may assume that each input would have exactly one solution, and
@@ -23,6 +25,8 @@
 >
     ******************* PROBLEM 2 ************************
     --------- PROBLEM NAME ::: Palindrome Number
+    -------- INPUT string = "abcba" ------------------------
+    -------- OUTPUT : true/false -----------------------
 
     Given an integer x, return true if x is a palindrome, and false otherwise.
     An integer is a palindrome when it reads the same forward and backward.
@@ -34,6 +38,8 @@
     ******************* PROBLEM 3 ************************
 
     ------ PROBLEM NAME ::: Running Sum
+    -------- INPUT : array = [1,2,3,4,5] ------------------------
+    -------- OUTPUT : array = [1,3,6,10,15] -----------------------
 
     Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
     Return the running sum of nums.
@@ -44,6 +50,8 @@
     ******************* PROBLEM 4 ************************
 
     ------ PROBLEM NAME ::: Merge Two Sorted Arrays
+    -------- INPUT : arrays ||  a := []int{1, 4, 7, 20} b := []int{3, 5, 6} ------------------------
+    -------- OUTPUT : [1 3 4 5 6 7 20] -----------------------
 
     Given two sorted integer arrays arr1 and arr2, return a new array that combines both
     of them and is also sorted.
