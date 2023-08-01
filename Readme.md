@@ -10,7 +10,7 @@
 
 - Two Sum
 
-> Prompt
+>
     ******************* PROBLEM 1 ************************
     -------- PROBLEM NAME ::: Two Sum
 
@@ -20,7 +20,7 @@
 
 - Palindrome Number
 
-> Prompt
+>
     ******************* PROBLEM 2 ************************
     --------- PROBLEM NAME ::: Palindrome Number
 
@@ -30,7 +30,7 @@
 
 - Running Sum
 
-> Prompt
+>
     ******************* PROBLEM 3 ************************
 
     ------ PROBLEM NAME ::: Running Sum
@@ -38,32 +38,34 @@
     Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
     Return the running sum of nums.
 
-- Remove Element
+- Merge Two Sorted Arrays
 
-> Prompt
+>
     ******************* PROBLEM 4 ************************
 
-    ------ PROBLEM NAME ::: Remove Element
+    ------ PROBLEM NAME ::: Merge Two Sorted Arrays
 
-    Given an integer array nums and an integer val, remove all occurrences of val in nums in-place.
-    The order of the elements may be changed. Then return the number of elements in nums which are
-    not equal to val. Consider the number of elements in nums which are not equal to val be k, to get
-    accepted, you need to do the following things: Change the array nums such that the first k elements
-    of nums contain the elements which are not equal to val. The remaining elements of nums are not
-    important as well as the size of nums.
-    Return k.
+    Given two sorted integer arrays arr1 and arr2, return a new array that combines both
+    of them and is also sorted.
 
-- Remove Duplicates From Sorted Array
+- Run Length Encoding
 
-> Prompt
+>
     ******************* PROBLEM 5 ************************
 
-    ------ PROBLEM NAME ::: Remove Duplicates from Sorted Array
+    ------ PROBLEM NAME ::: Run Length Encoding
+    -------- INPUT : string = "AAAAAAAAAAAAABBCCCCDD" ------------------------
+    -------- OUTPUT : 9A4A2B4C2D -----------------------
 
-    Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such
-    that each unique element appears only once. The relative order of the elements should be kept
-    the same. Then return the number of unique elements in nums. Consider the number of unique elements
-    of nums to be k, to get accepted, you need to do the following things: Change the array nums such that
-    the first k elements of nums contain the unique elements in the order they were present in nums initially.
-    The remaining elements of nums are not important as well as the size of nums.
-    Return k.
+    Write a function that takes in a non-empty string and returns its run-length encoding.
+
+    From Wikipedia, "run-length encoding is a form of lossless data compression in which runs
+    of data are stored as a single data value and count, rather than as the original run."
+    For this problem, a run of data is any sequence of consecutive, identical characters. So the run "AAA"
+    would be run-length-encoded as "3A" To make things more complicated, however, the input string can contain all sorts of special characters,
+    including numbers. And since encoded data must be decodable, this
+    means that we can't naively run-length-encode long runs. For example, the run "AAAAAAAAAAAA' (12 A s),
+    can't naively be encoded as
+    "12A", since this string can be decoded as either "AAAAAAAAAAAA' or "IAA"
+    . Thus, long runs (runs of 10 or more characters) should be encoded in a split fashion; the aforementioned
+    run should be encoded as "9A3A"

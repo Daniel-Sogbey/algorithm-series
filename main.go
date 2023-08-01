@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, world!")
-	fmt.Println(algorithms.TwoNumberSum())
+	nums := []int{2, 11, 15, 7}
+	target := 9
+	fmt.Println(algorithms.TwoNumberSum1(nums, target))
 
 }
