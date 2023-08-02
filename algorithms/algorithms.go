@@ -3,7 +3,7 @@ package algorithms
 /*
 ******************* PROBLEM 1 ************************
 -------- PROBLEM NAME ::: Two Sum
--------- INPUT : array =[2, 11, 15, 7] ------------------------
+-------- INPUT : array =[2, 11, 15, 7] , target = 9 ------------------------
 -------- OUTPUT : array =[0,3] or [3,0] -----------------------
 
 Given an array of integers nums and an integer target, return indices of the two numbers such
@@ -11,9 +11,30 @@ that they add up to target. You may assume that each input would have exactly on
 you may not use the same element twice. You can return the answer in any order.
 */
 
-// Complexity Analysis : Time : O(n^2) | Space : O(1)
-func TwoNumberSum() int {
-	return 1
+func TwoNumberSum(nums []int, target int) []int {
+
+	hashMap := make(map[int]bool)
+
+	for i := 0; i < len(nums); i++ {
+		complement := target - nums[i]
+
+		if !hashMap[complement] {
+			hashMap[nums[i]] = true
+		} else {
+			return []int{indexOf(nums, complement), indexOf(nums, nums[i])}
+		}
+	}
+
+	return []int{}
+}
+
+func indexOf(source []int, value int) int {
+	for i := 0; i < len(source); i++ {
+		if value == source[i] {
+			return i
+		}
+	}
+	return -1
 }
 
 /*
@@ -27,8 +48,20 @@ An integer is a palindrome when it reads the same forward and backward.
 For example, 13231 is a palindrome while 123 is not.
 */
 
-func IsPalindrome() int {
-	return 1
+func IsPalindrome(str string) bool {
+	left := 0
+	right := len(str) - 1
+
+	for left < right {
+		if str[left] != str[right] {
+			return false
+		}
+		left++
+		right--
+	}
+
+	return true
+
 }
 
 /*
@@ -42,8 +75,20 @@ Given an array nums. We define a running sum of an array as runningSum[i] = sum(
 Return the running sum of nums.
 */
 
-func RunningSum() int {
-	return 1
+func RunningSum(nums []int) []int {
+	if len(nums) == 0 {
+		return []int{}
+	}
+
+	results := []int{nums[0]}
+	runningSum := nums[0] // 1
+
+	for i := 1; i < len(nums); i++ {
+		runningSum = nums[i] + runningSum
+		results = append(results, runningSum)
+	}
+
+	return results
 }
 
 /*
@@ -57,8 +102,32 @@ Given two sorted integer arrays arr1 and arr2, return a new array that combines 
 of them and is also sorted.
 */
 
-func MergeTwoSortedArrays() int {
-	return 1
+func MergeTwoSortedArrays(a []int, b []int) []int {
+	pointerA := 0
+	pointerB := 0
+	result := []int{}
+
+	for pointerA < len(a) && pointerB < len(b) {
+		if a[pointerA] < b[pointerB] {
+			result = append(result, a[pointerA])
+			pointerA++
+		} else {
+			result = append(result, b[pointerB])
+			pointerB++
+		}
+	}
+
+	for pointerA < len(a) {
+		result = append(result, a[pointerA])
+		pointerA++
+	}
+
+	for pointerB < len(b) {
+		result = append(result, b[pointerB])
+		pointerB++
+	}
+
+	return result
 }
 
 /*
@@ -77,8 +146,16 @@ array but that are in the same order as they appear in the array. For instance t
 Note that a single number in an array and the array itself are both valid subsequences of the array.
 */
 
-func ValidateSubsequence() int {
-	return 1
+func ValidateSubsequence(a []int, s []int) bool {
+	slow := 0
+
+	for fast := 0; fast < len(a); fast++ {
+		if s[slow] == a[fast] {
+			slow++
+		}
+	}
+
+	return slow == len(s)
 }
 
 /*

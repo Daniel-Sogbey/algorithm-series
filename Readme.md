@@ -13,7 +13,7 @@
 >
     ******************* PROBLEM 1 ************************
     -------- PROBLEM NAME ::: Two Sum
-    -------- INPUT : array =[2, 11, 15, 7] ------------------------
+    -------- INPUT : array =[2, 11, 15, 7], target = 9 ------------------------
     -------- OUTPUT : array =[0,3] or [3,0] -----------------------
 
     Given an array of integers nums and an integer target, return indices of the two numbers such
@@ -65,9 +65,9 @@
     -------- INPUT : array = [1,2,3,4] , subsequence = [1,3,4] ------------------------
     -------- OUTPUT : true/false -----------------------
 
-    Given two non-empty arrays of integers, write a function that determines whethe the second array is a subsequence of the first one.
+    Given two non-empty arrays of integers, write a function that determines whether the second array is a subsequence of the first one.
     
-    A subsequence of an array is a set of numbers that aren't necessarily adiacent in the array but that are in the same order as they appear in the array. For instance the numbers [1, 3, 4] form a subsequence of the array [1, 2, 3, 4]. and so do the numbers [2, 4] . Note that a single number in an array and the array itself are both valid subsequences of the array.
+    A subsequence of an array is a set of numbers that aren't necessarily adjacent in the array but that are in the same order as they appear in the array. For instance the numbers [1, 3, 4] form a subsequence of the array [1, 2, 3, 4]. and so do the numbers [2, 4] . Note that a single number in an array and the array itself are both valid subsequences of the array.
 
 - Run Length Encoding
 
