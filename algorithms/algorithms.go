@@ -3,7 +3,7 @@ package algorithms
 /*
 ******************* PROBLEM 1 ************************
 -------- PROBLEM NAME ::: Two Sum
--------- INPUT : array =[2, 11, 15, 7] , target = 9 ------------------------
+-------- INPUT : array = [2, 11, 15, 7] , target = 9 ------------------------
 -------- OUTPUT : array =[0,3] or [3,0] -----------------------
 
 Given an array of integers nums and an integer target, return indices of the two numbers such
@@ -75,6 +75,7 @@ Given an array nums. We define a running sum of an array as runningSum[i] = sum(
 Return the running sum of nums.
 */
 
+// Time : O(n) | Space : O(1)
 func RunningSum(nums []int) []int {
 	if len(nums) == 0 {
 		return []int{}
@@ -89,6 +90,15 @@ func RunningSum(nums []int) []int {
 	}
 
 	return results
+}
+
+// Perfect solution by far; very concise: Time : O(n) | Space : O(1)
+func RunningSum2(nums []int) []int {
+	for i := 1; i < len(nums); i++ {
+		nums[i] = nums[i-1] + nums[i]
+	}
+
+	return nums
 }
 
 /*

@@ -23,7 +23,6 @@ func TestTwoSum(t *testing.T) {
 			expects: []int{5, 2},
 			target:  7,
 		},
-
 		{
 			input:   []int{4, 5, 8, 12, 15},
 			expects: []int{4, 5},
