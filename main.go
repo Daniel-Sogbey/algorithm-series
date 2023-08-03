@@ -15,13 +15,13 @@ func main() {
 
 	// fmt.Println(algorithms.IsPalindrome(str))
 
-	// nums := []int{1, 2, 3, 4, 5}
+	nums := []int{1, 2, 3, 4, 5}
 
-	// fmt.Println(algorithms.RunningSum(nums))
+	fmt.Println(algorithms.RunningSum2(nums))
 
-	a := []int{1, 4, 7, 20}
-	s := []int{1, 20, 4}
+	// a := []int{1, 4, 7, 20}
+	// s := []int{1, 20, 4}
 
-	fmt.Println(algorithms.ValidateSubsequence(a, s))
+	// fmt.Println(algorithms.ValidateSubsequence(a, s))
 
 }
