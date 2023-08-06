@@ -21,7 +21,7 @@ func TwoNumberSum(nums []int, target int) []int {
 		if !hashMap[complement] {
 			hashMap[nums[i]] = true
 		} else {
-			return []int{indexOf(nums, complement), indexOf(nums, nums[i])}
+			return []int{complement, nums[i]}
 		}
 	}
 
@@ -48,7 +48,7 @@ An integer is a palindrome when it reads the same forward and backward.
 For example, 13231 is a palindrome while 123 is not.
 */
 
-func IsPalindrome(str string) bool {
+func IsPalindromeString(str string) bool {
 	left := 0
 	right := len(str) - 1
 

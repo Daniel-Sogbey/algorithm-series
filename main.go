@@ -13,7 +13,7 @@ func main() {
 
 	// str := "abctba"
 
-	// fmt.Println(algorithms.IsPalindrome(str))
+	// fmt.Println(algorithms.IsPalindromeString(str))
 
 	nums := []int{1, 2, 3, 4, 5}
 

@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-type testCase struct {
+type twoNumberSumTestCase struct {
 	input   []int
 	expects []int
 	target  int
@@ -12,7 +12,7 @@ type testCase struct {
 
 func TestTwoSum(t *testing.T) {
 
-	testCases := []testCase{
+	testCases := []twoNumberSumTestCase{
 		{
 			input:   []int{2, 7, 11, 15},
 			expects: []int{2, 7},
@@ -23,6 +23,7 @@ func TestTwoSum(t *testing.T) {
 			expects: []int{5, 2},
 			target:  7,
 		},
+
 		{
 			input:   []int{4, 5, 8, 12, 15},
 			expects: []int{4, 5},
@@ -46,4 +47,26 @@ func TestTwoSum(t *testing.T) {
 		}
 	}
 
+}
+
+type isPalindromeStringTestCase struct {
+	str  string
+	want bool
+}
+
+func TestIsPalindromeString(t *testing.T) {
+	testCases := []isPalindromeStringTestCase{
+		{str: "abcdefgh", want: false},
+		{str: "abcba", want: true},
+		{str: "121", want: true},
+		{str: "wq", want: false},
+	}
+
+	for _, tc := range testCases {
+		isPalindrome := IsPalindromeString(tc.str)
+
+		if isPalindrome != tc.want {
+			t.Errorf("Test case failed: Expected %v since the string is not a palindrome but got %v", tc.want, isPalindrome)
+		}
+	}
 }
